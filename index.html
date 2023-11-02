@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/style.css">
         <link rel="icon" href="./images/favicon.png">
+        <script src="./js/script.js" defer></script>
         <title>Paint App</title>
     </head>
 
@@ -19,25 +20,25 @@
                     <ul class="options">
 
                         <!-- Dikdörtgen Çizme -->
-                        <li class="option">
+                        <li class="option tool" id="rectangle">
                             <span>Rectangle</span>
                             <img src="./images/icons/rectangle.svg" alt="rectangle">
                         </li>
 
                         <!-- Daire Çizme -->
-                        <li class="option">
+                        <li class="option tool" id="circle">
                             <span>Circle</span>
                             <img src="./images/icons/circle.svg" alt="circle">
                         </li>
 
                         <!-- Üçgen Çizme -->
-                        <li class="option">
+                        <li class="option tool" id="triangle">
                             <span>Triangle</span>
                             <img src="./images/icons/triangle.svg" alt="triangle">
                         </li>
 
                         <!-- Dolgu Renkli Şekil Çizme Ayarı -->
-                        <li class="option">
+                        <li class="option tool" id="fill-color">
                             <label for="fill-color">Fill Color</label>
                             <input type="checkbox" id="fill-color">
                         </li>
@@ -50,13 +51,13 @@
                     <ul class="options">
 
                         <!-- Fırça -->
-                        <li class="option active">
+                        <li class="option active tool" id="brush">
                             <span>Brush</span>
                             <img src="./images/icons/brush.svg" alt="brush">
                         </li>
 
                         <!-- Silgi -->
-                        <li class="option">
+                        <li class="option tool" id="eraser">
                             <span>Eraser</span>
                             <img src="./images/icons/eraser.svg" alt="eraser">
                         </li>
@@ -95,7 +96,7 @@
 
             <!-- Çizim Alanı -->
             <section class="drawing-board">
-                
+                <canvas></canvas>
             </section>
         </div>
     </body>
